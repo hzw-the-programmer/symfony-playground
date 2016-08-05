@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="zh-CN" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="action.browse_admin">
+                <source>action.browse_admin</source>
+                <target><![CDATA[浏览后台]]></target>
+            </trans-unit>
+            <trans-unit id="action.browse_app">
+                <source>action.browse_app</source>
+                <target><![CDATA[浏览应用]]></target>
+            </trans-unit>
+
+            <trans-unit id="help.browse_admin">
+                <source>help.browse_admin</source>
+                <target><![CDATA[浏览<strong>后台部分</strong>。]]></target>
+            </trans-unit>
+            <trans-unit id="help.browse_app">
+                <source>help.browse_app</source>
+                <target><![CDATA[浏览<strong>公共部分</strong>。]]></target>
+            </trans-unit>
+            <trans-unit id="title.homepage">
+                <source>title.homepage</source>
+                <target><![CDATA[欢迎来到<strong>Symfony Demo</strong>应用]]></target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
+

@@ -14,3 +14,13 @@ web_profiler:
 
 swiftmailer:
     disable_delivery: true
+
+doctrine:
+    dbal:
+        path: "%kernel.root_dir%/data/blog_test.sqlite"
+
+security:
+    firewalls:
+        secured_area:
+            http_basic: ~
+
