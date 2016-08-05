@@ -1,0 +1,11 @@
+[
+{% for post in posts %}
+    {
+        "title": "{{post.title}}",
+        "summary": "{{post.summary}}"
+    }
+    {% if loop.index != constant('AppBundle\\Entity\\Post::NUM_ITEMS') %}
+        ,
+    {% endif %}
+{% endfor %}
+]

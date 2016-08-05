@@ -18,15 +18,15 @@ class BlogController extends Controller
 {
     /**
      * @Route("/", defaults={"page": 1}, name="blog_index")
-     * @Route("/page/{page}", requirements={"page": "[0-9]\d*"}, name="blog_index_paginated")
+     * @Route("/page/{page}.{_format}", defaults={"_format": "html"}, requirements={"page": "[0-9]\d*"}, name="blog_index_paginated")
      * @Method("GET")
      * @Cache(smaxage="10")
      */
-    public function indexAction($page)
+    public function indexAction($_format, $page)
     {
         $posts = $this->getDoctrine()->getRepository('AppBundle:Post')->findLatest($page);
 
-        return $this->render('blog/index.html.twig', array('posts' => $posts));
+        return $this->render('blog/index.' . $_format . '.twig', array('posts' => $posts));
     }
 
     /**
