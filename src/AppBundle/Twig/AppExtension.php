@@ -24,6 +24,11 @@ class AppExtension extends \Twig_Extension
                 array($this, 'markdownToHtml'),
                 array('is_safe' => array('html'))
             ),
+            new \Twig_SimpleFilter(
+                'json',
+                array($this, 'json'),
+                array('is_safe' => array('html'))
+            ),
         );
     }
 
@@ -40,6 +45,11 @@ class AppExtension extends \Twig_Extension
     public function markdownToHtml($content)
     {
         return $this->parser->toHtml($content);
+    }
+
+    public function json($content)
+    {
+        return str_replace("\n", "\\n", $content);
     }
 
     public function getLocales()

@@ -1,0 +1,17 @@
+{
+    "id": {{post.id}},
+    "title": "{{post.title}}",
+    "content": "{{post.content|md2html|json}}",
+    "comments": [
+        {% for comment in post.comments %}
+            {
+                "authorEmail": "{{comment.authorEmail}}",
+                "publishedAt": "{{comment.publishedAt|localizeddate('medium', 'short')}}",
+                "content": "{{comment.content|md2html|json}}"
+            }
+            {% if loop.index != post.comments|length %}
+                ,
+            {% endif %}
+        {% endfor %}
+    ]
+}

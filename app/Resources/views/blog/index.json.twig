@@ -1,6 +1,7 @@
 [
 {% for post in posts %}
     {
+        "slug": "{{post.slug}}",
         "title": "{{post.title}}",
         "summary": "{{post.summary}}"
     }

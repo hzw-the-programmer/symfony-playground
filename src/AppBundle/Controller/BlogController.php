@@ -30,12 +30,12 @@ class BlogController extends Controller
     }
 
     /**
-     * @Route("/posts/{slug}", name="blog_post")
+     * @Route("/posts/{slug}.{_format}", defaults={"_format": "html"}, name="blog_post")
      * @Method("GET")
      */
-    public function postShowAction(Post $post)
+    public function postShowAction($_format, Post $post)
     {
-        return $this->render('blog/post_show.html.twig', array('post' => $post));
+        return $this->render('blog/post_show.' . $_format . '.twig', array('post' => $post));
     }
 
     /**
