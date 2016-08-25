@@ -71,3 +71,7 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
+nelmio_cors:
+    paths:
+        '^/api/':
+            allow_origin: ['*']
