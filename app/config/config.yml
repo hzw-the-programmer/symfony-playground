@@ -71,6 +71,11 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
+api_platform:
+    collection:
+        pagination:
+            items_per_page: 10
+
 nelmio_cors:
     paths:
         '^/api/':
