@@ -16,3 +16,7 @@ homepage:
         template: default/homepage.html.twig
         _locale: "%locale%"
 
+api:
+    resource: "."
+    type: "api_platform"
+    prefix: "/api"

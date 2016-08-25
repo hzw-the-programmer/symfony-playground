@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
             new CodeExplorerBundle\CodeExplorerBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            new ApiPlatform\Core\Bridge\Symfony\Bundle\ApiPlatformBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

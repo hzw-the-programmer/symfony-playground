@@ -32,7 +32,8 @@
         "ezyang/htmlpurifier": "^4.8",
         "erusev/parsedown": "^1.6",
         "white-october/pagerfanta-bundle": "^1.0",
-        "doctrine/doctrine-fixtures-bundle": "^2.3"
+        "doctrine/doctrine-fixtures-bundle": "^2.3",
+        "api-platform/core": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

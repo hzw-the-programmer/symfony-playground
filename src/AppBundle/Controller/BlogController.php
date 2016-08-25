@@ -17,7 +17,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class BlogController extends Controller
 {
     /**
-     * @Route("/", defaults={"page": 1}, name="blog_index")
+     * @Route("/", defaults={"page": 1, "_format": "html"}, name="blog_index")
      * @Route("/page/{page}.{_format}", defaults={"_format": "html"}, requirements={"page": "[0-9]\d*"}, name="blog_index_paginated")
      * @Method("GET")
      * @Cache(smaxage="10")

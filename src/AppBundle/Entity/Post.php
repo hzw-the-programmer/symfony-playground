@@ -2,11 +2,13 @@
 
 namespace AppBundle\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
+ * @ApiResource
  * @ORM\Entity(repositoryClass="AppBundle\Repository\PostRepository")
  * @ORM\Table(name="symfony_demo_post")
  */
