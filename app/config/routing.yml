@@ -20,3 +20,8 @@ api:
     resource: "."
     type: "api_platform"
     prefix: "/api"
+
+task_create:
+    path: /task/create
+    defaults:
+        _controller: AppBundle:Task:create
