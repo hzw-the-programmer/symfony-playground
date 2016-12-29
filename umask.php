@@ -1,7 +1,28 @@
 <?php
 
-printf("%s\n", decoct(umask()));
-//umask(0);
-fopen('/tmp/a.test', 'w');
-fopen('/tmp/b.test', 'w');
-chmod('/tmp/a.test', 0666);
+$file = '/tmp/afile';
+printf("---create---\n");
+printf("umask:%o\n", umask());
+fopen($file, 'w');
+printf("perms:%o\n", fileperms($file));
+
+unlink($file);
+umask(0);
+
+printf("---create---\n");
+printf("umask:%o\n", umask());
+fopen($file, 'w');
+printf("perms:%o\n", fileperms($file));
+
+unlink($file);
+umask(2);
+
+printf("---chmod---\n");
+printf("umask:%o\n", umask());
+fopen($file, 'w');
+printf("perms:%o\n", fileperms($file));
+chmod($file, 0666);
+clearstatcache();
+printf("perms:%o\n", fileperms($file));
+
+unlink($file);
