@@ -11,7 +11,7 @@ class O {
     function __construct($str) {
         $this->str = $str;
     }
-    function __tostring() {
+    function __toString() {
         return $this->str;
     }
 }
