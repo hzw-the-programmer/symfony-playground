@@ -9,3 +9,7 @@ ls -l ~/tools/php/phpunit
 chmod 755 ~/tools/php/phpunit 
 ls -l ~/tools/php/phpunit 
 cd ~/work/symfony/blog
+phpunit --help
+export PATH=~/work/php/php-7.0.10-build/bin:$PATH
+phpunit --help
+phpunit StackTest
