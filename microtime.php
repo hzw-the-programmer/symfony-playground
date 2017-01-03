@@ -1,16 +1,8 @@
 <?php
 
-echo microtime() . PHP_EOL;
-printf("%f\n", microtime(true));
-printf("%d\n", time());
-
-echo PHP_EOL;
-$time = microtime(true);
-printf("%f\n", $time);
-printf("%.16f\n", $time);
-usleep(100);
-$time = microtime(true) - $time;
-printf("%f\n", $time);
-printf("%.16f\n", $time);
-printf("%f\n", $time * 1e9);
-printf("%f\n", $time * 1e6);
+$microtime = microtime(true);
+$microtimeStr = microtime();
+printf("%f\n", $microtime);
+list($msec, $sec) = explode(" ", $microtimeStr);
+printf("%f\n", $msec + $sec);
+printf("%s\n", $msec);
