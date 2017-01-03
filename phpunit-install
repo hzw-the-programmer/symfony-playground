@@ -26,3 +26,5 @@ echo -n "1, 1, 3" >> data.csv
 phpunit DataProviderReturnIteratorObject
 echo >> data.csv
 phpunit DataProviderReturnIteratorObject
+ls -l data.csv
+truncate -s 31 data.csv
