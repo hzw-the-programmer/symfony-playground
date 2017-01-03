@@ -20,7 +20,7 @@ class CsvFileIterator implements Iterator {
     }
 
     public function valid() {
-        return !feof($this->file);
+        return $this->current != false;
     }
 
     public function key() {
