@@ -1,0 +1,11 @@
+cd /tmp/
+wget https://phar.phpunit.de/phpunit.phar
+wget https://phar.phpunit.de/phpunit.phar.asc
+gpg phpunit.phar.asc 
+gpg --keyserver pgp.uni-mainz.de --recv-keys 0x4AA394086372C20A
+gpg phpunit.phar.asc 
+mv phpunit.phar ~/tools/php/phpunit
+ls -l ~/tools/php/phpunit 
+chmod 755 ~/tools/php/phpunit 
+ls -l ~/tools/php/phpunit 
+cd ~/work/symfony/blog
