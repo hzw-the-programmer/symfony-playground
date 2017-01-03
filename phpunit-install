@@ -19,3 +19,8 @@ cp DependencyFailureTest.php DependencyFailureTest1.php
 phpunit DependencyFailureTest
 phpunit DependencyFailureTest DependencyFailureTest1.php
 phpunit --verbose DependencyFailureTest DependencyFailureTest1.php
+echo "0, 0, 0" > data.csv
+echo "1, 0, 1" >> data.csv
+echo "0, 1, 1" >> data.csv
+echo -n "1, 1, 3" >> data.csv
+phpunit DataProviderReturnIteratorObject
