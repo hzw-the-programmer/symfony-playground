@@ -13,3 +13,5 @@ phpunit --help
 export PATH=~/work/php/php-7.0.10-build/bin:$PATH
 phpunit --help
 phpunit StackTest
+phpunit DependencyFailureTest
+phpunit --verbose DependencyFailureTest
