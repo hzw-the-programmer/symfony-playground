@@ -15,3 +15,7 @@ phpunit --help
 phpunit StackTest
 phpunit DependencyFailureTest
 phpunit --verbose DependencyFailureTest
+cp DependencyFailureTest.php DependencyFailureTest1.php
+phpunit DependencyFailureTest
+phpunit DependencyFailureTest DependencyFailureTest1.php
+phpunit --verbose DependencyFailureTest DependencyFailureTest1.php
