@@ -5,6 +5,7 @@
             <directory>tests</directory>
         </testsuite>
         <testsuite name="ts1">
+            <file>tests/TemplateMethodsTest.php</file>
             <file>tests/StackTestWidthSetup.php</file>
         </testsuite>
     </testsuites>
