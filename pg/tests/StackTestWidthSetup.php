@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-class StackTest extends TestCase {
+class StackTest1 extends TestCase {
     private $stack;
 
     public function setUp() {
