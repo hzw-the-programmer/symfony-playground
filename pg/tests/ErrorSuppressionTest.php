@@ -7,4 +7,3 @@ class ErrorSuppressionTest extends TestCase {
         $this->assertFalse(@$writer->write('/is-not-writeable/file', 'stuff'));
     }
 }
-
