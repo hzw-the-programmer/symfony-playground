@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-class DependencyFailureTest extends TestCase {
+class DependencyFailure1Test extends TestCase {
     /**
      * @depends testOne
      */
