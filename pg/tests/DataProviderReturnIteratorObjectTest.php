@@ -1,8 +1,6 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-require 'CsvFileIterator.php';
-
 class DataProviderReturnIteratorObject extends TestCase {
     /**
      * @dataProvider addtionProvider
@@ -12,6 +10,6 @@ class DataProviderReturnIteratorObject extends TestCase {
     }
 
     public function addtionProvider() {
-        return new CsvFileIterator('data.csv');
+        return new CsvFileIterator(__DIR__ . '/data.csv');
     }
 }
