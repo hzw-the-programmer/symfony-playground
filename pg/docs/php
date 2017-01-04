@@ -1,0 +1,15 @@
+tar -xvf zlib-1.2.10.tar.gz 
+cd zlib-1.2.10/
+./configure --help
+./configure --prefix=/home/hzw/work/php/zlib-1.2.10-build
+make
+make install
+cd ..
+ls zlib-1.2.10-build/
+ls openssl-build/usr/local/ssl/
+php -i | grep "prefix"
+cd php-7.0.10
+./configure --prefix=/home/hzw/work/php/php-7.0.10-build --with-libxml-dir=/home/hzw/work/php/libxml2-2.9.4-build --with-openssl=/home/hzw/work/php/openssl-build/usr/local/ssl --with-curl=/home/hzw/work/php/curl-build --with-zlib=/home/hzw/work/php/zlib-1.2.10-build
+make
+make install
+php -m
