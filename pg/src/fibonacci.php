@@ -13,7 +13,7 @@ function fibonacci() {
 
 $fib = fibonacci();
 var_dump($fib);
-foreach($fib as $i) {
-    if ($i > 10) break;
-    echo "$i\n";
+foreach($fib as $k => $v) {
+    if ($v > 10) break;
+    echo "$k: $v\n";
 }
