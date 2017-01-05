@@ -1,18 +1,19 @@
 <?php
-function fibonacci($max) {
-    $a = 1;
+function fibonacci() {
+    $a = 0;
     $b = 1;
     yield($a);
     yield($b);
-    while (($n = $a + $b) < $max) {
-        yield $n;
-        $a = $b;
-        $b = $n;
+    while (true) {
+        $b = $a + $b;
+        $a = $b - $a;
+        yield $b;
     }
 }
 
-$fib = fibonacci(10);
+$fib = fibonacci();
 var_dump($fib);
 foreach($fib as $i) {
+    if ($i > 10) break;
     echo "$i\n";
 }
