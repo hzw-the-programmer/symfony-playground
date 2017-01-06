@@ -1,0 +1,4 @@
+ssh 120.76.210.153
+ssh hzhiwen@120.76.210.153
+git clone ssh://hzhiwen@120.76.210.153/../../data/wwwroot/cms/.git cms
+bipoh1217
