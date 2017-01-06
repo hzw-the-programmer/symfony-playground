@@ -51,9 +51,9 @@ foreach($parameters as $p) {
     var_dump($p->hasType());
 
     echo "type:\n";
-    if ($p->hasType()) {
+    //if ($p->hasType()) {
         var_dump($p->getType());
-    }
+    //}
 
     echo "is array:\n";
     var_dump($p->isArray());
