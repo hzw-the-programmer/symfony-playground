@@ -1,0 +1,3 @@
+ls /etc/apache2/apache2.conf
+cp ~/work/apache2conf/ecshop.conf ~/work/apache2conf/cms1.conf
+sudo apache2ctl restart

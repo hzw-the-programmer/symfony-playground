@@ -1,0 +1,35 @@
+select database();
+show databases;
+use hzw1;
+
+select user();
+
+show tables;
+show tables in mysql;
+desc mysql.user;
+select Host,User,Password from mysql.user;
+
+show variables;
+show variables where variable_name like "%dir";
+
+select variable_value from information_schema.global_variables where variable_name = "datadir";
+
+create database cms1;
+show databases;
+sudo ls /var/lib/mysql
+sudo ls /var/lib/mysql/cms1
+
+create user 'cms1user'@'localhost' identified by 'xxxooo';
+select User from mysql.user;
+
+grant all on cms1.* to 'cms1user'@'localhost';
+show grants for 'cms1user'@'localhost';
+
+select database();
+use cms1;
+show tables;
+source ~/work/cms/localhost.sql;
+show tables;
+
+mysql -u root -p cms1
+mysql -u root -p cms1 < ~/work/cms/localhost.sql
