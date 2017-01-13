@@ -1,39 +1,23 @@
-#box1 {
-    background-color: maroon;
-    border: 5px olive solid;
+body {
+    border: 4px lime solid;
 }
 
-#box1 p {
-    background-color: fuchsia;
-    border: 5px aqua solid;
-    padding: 10px;
-    margin: 0px;
+.gbb {
+    background-color: gray;
+    border: 4px black solid;
+    padding: 8px;
 }
 
-#box2 {
+.bgg {
+    background-color: black;
+    border: 4px gray solid;
+    padding: 8px;
+    color: gray;
+    margin: 32px;
+}
+
+.sbb {
     background-color: silver;
-    border: 5px purple solid;
-}
-
-#box2 h1 {
-    background-color: teal;
-    border: 5px olive solid;
-    /*margin: 0px;*/
-}
-
-#box2 p {
-    background-color: olive;
-    border: 5px teal solid;
-    margin: 40px;
-}
-
-#box3 {
-    background-color: gray;
-    border: 5px fuchsia solid;
-    padding: 10px;
-}
-
-#box4 {
-    background-color: gray;
-    border: 5px maroon solid;
+    border: 4px black solid;
+    padding: 8px;
 }
