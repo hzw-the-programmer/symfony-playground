@@ -2,6 +2,10 @@ body {
     border: 4px lime solid;
 }
 
+#box1 {
+    border: 4px teal solid;
+}
+
 .gbb {
     background-color: gray;
     border: 4px black solid;
