@@ -25,3 +25,8 @@ body {
     border: 4px black solid;
     padding: 8px;
 }
+
+#box2 {
+    border: 4px aqua solid;
+    margin: 8px;
+}
