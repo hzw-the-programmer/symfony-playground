@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .bs-example {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bs-example">
+        <form>
+            <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+
+    <div class="bs-example">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputEmail1" class="control-label col-xs-2">Email</label>
+                <div class="col-xs-10">
+                    <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword1" class="control-label col-xs-2">Password</label>
+                <div class="col-xs-10">
+                    <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10">
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="bs-example">
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="inputEmail2">Email</label>
+                <input type="email" class="form-control" id="inputEmail2" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="inputPassword2">Password</label>
+                <input type="password" class="form-control" id="inputPasword2" placeholder="Password">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <br>
+        <div class="alert alert-info">
+            <a href="#" class="close" data-dismiss="alert">x</a>
+            <strong>Note:</strong>
+            The inline form layout is rendered as default vertical form layout if the viewport width is less than 768px.
+            Open the output in a new window and resize the screen to see how it works.
+        </div>
+    </div>
+
+    <div class="bs-example">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputEmail3" class="control-label col-xs-2">Email</label>
+                <div class="col-xs-10">
+                    <p class="form-control-static">hzw@hzw.org</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="control-label col-xs-2">Password</label>
+                <div class="col-xs-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10">
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="bs-example">
+        <form>
+            <h4>Choose your favorite sports</h4>
+            <div class="checkbox">
+                <label><input type="checkbox" name="sports"> Cricket</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="sports"> Football</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="sports"> Tennis</label>
+            </div>
+            <hr>
+            <h4>Choose your gender</h4>
+            <div class="radio">
+                <label><input type="radio" name="gender"> Male</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="gender"> Female</label>
+            </div>
+        </form>
+    </div>
+
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
