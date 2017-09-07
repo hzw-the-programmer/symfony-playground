@@ -1,0 +1,21 @@
+.icon-base{
+	background:url('images/basic.png') no-repeat;
+}
+.icon-layout{
+	background:url('images/layout.png') no-repeat;
+}
+.icon-menu{
+	background:url('images/menu.png') no-repeat;
+}
+.icon-form{
+	background:url('images/form.png') no-repeat;
+}
+.icon-window{
+	background:url('images/window.png') no-repeat;
+}
+.icon-datagrid{
+	background:url('images/grid.png') no-repeat;
+}
+.icon-gears{
+	background:url('images/gears.png') no-repeat;
+}
