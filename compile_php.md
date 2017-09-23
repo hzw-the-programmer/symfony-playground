@@ -34,3 +34,6 @@ cd ../php-7.1.9/
 ./configure --prefix=/home/pageask/build/php-7.1.9-build --with-apxs2=/home/pageask/build/httpd-2.4.27-build/bin/apxs --with-libxml-dir=/home/pageask/build/libxml2-2.9.4-build
 make
 make install
+./configure --prefix=/home/pageask/build/php-7.1.9-build --with-apxs2=/home/pageask/build/httpd-2.4.27-build/bin/apxs --with-libxml-dir=/home/pageask/build/libxml2-2.9.4-build --with-pdo-mysql
+make
+make install
