@@ -16,11 +16,15 @@
             options:{
                 fitColumns:true,
                 columns:[[
-                    {field:'sn',title:'sn',width:200},
-                    {field:'ip',title:'ip',width:200},
-                    {field:'port',title:'port',width:200}
+                    {field:'sn',title:'sn',width:200,sortable:true},
+                    {field:'ip',title:'ip',width:200,sortable:true},
+                    {field:'port',title:'port',width:200,sortable:true}
                 ]],
-                url:'get_device.php'
+                url:'get_device.php',
+                pagination:true,
+                sortName:'sn',
+                sortOrder:'asc',
+                multiSort:true
             },
             subgrid:{
                 options:{
@@ -54,8 +58,7 @@
             $('#dg').datagrid({
                 title:'Devices',
                 width:700,
-                height:350,
-                pagination:true
+                height:350
             }).datagrid('subgrid', conf);
         });
     </script>
