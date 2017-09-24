@@ -52,7 +52,8 @@
                             //     return value*100+'%'
                             // }}
                         ]],
-                        url:'get_status.php'
+                        url:'get_status.php',
+                        pagination:true,
                     }
                 }
             }
@@ -62,7 +63,7 @@
             $('#dg').datagrid({
                 title:'Devices',
                 width:700,
-                height:350
+                height:600
             }).datagrid('subgrid', conf);
         });
     </script>
