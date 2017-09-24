@@ -15,7 +15,15 @@ $offset = ($page - 1) * $rows;
 
 $orderby = '';
 if ($sort && $order) {
-  $orderby = "$sort $order";
+  $sorts = explode(',', $sort);
+  $orders = explode(',', $order);
+  $len = count($sorts);
+  for ($i = 0; $i < $len; $i++) {
+    $orderby .= "$sorts[$i] $orders[$i]";
+    if ($i != $len - 1) {
+      $orderby .= ',';
+    }
+  }
 }
 
 try {
