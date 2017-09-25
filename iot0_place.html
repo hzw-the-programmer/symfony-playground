@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Build CRUD DataGrid with jQuery EasyUI - jQuery EasyUI Demo</title>
+    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.5.3/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.5.3/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.5.3/demo/demo.css">
+    <script type="text/javascript" src="jquery-easyui-1.5.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-easyui-1.5.3/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="jquery-easyui-1.5.3/jquery.edatagrid.js"></script>
+</head>
+<body>
+    <h2>CRUD DataGrid</h2>
+    <p>Double click the row to begin editing.</p>
+
+    <table id="dg" title="Places" style="width:700px;height:250px"
+            toolbar="#toolbar" pagination="true" idField="id"
+            rownumbers="true" fitColumns="true" singleSelect="true">
+        <thead>
+            <tr>
+                <th field="plant" width="50" editor="text">Plant</th>
+                <th field="workshop" width="50" editor="text">Workshop</th>
+                <th field="region" width="50" editor="text">region</th>
+                <th field="line" width="50" editor="text">line</th>
+                <th field="station" width="50" editor="text">station</th>
+                <th field="channel" width="50" editor="text">channel</th>
+                <!-- <th field="region" width="50" editor="{type:'validatebox',options:{required:true}}">Region</th>
+                <th field="line" width="50" editor="{type:'validatebox',options:{required:true}}">Line</th>
+                <th field="station" width="50" editor="{type:'validatebox',options:{required:true}}">Station</th>
+                <th field="channel" width="50" editor="{type:'validatebox',options:{required:true}}">Channel</th> -->
+                <!-- <th field="email" width="50" editor="{type:'validatebox',options:{required:true,validType:'email'}}">Email</th> -->
+            </tr>
+        </thead>
+    </table>
+    <div id="toolbar">
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="javascript:$('#dg').edatagrid('addRow')">New</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="javascript:$('#dg').edatagrid('destroyRow')">Destroy</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-save" plain="true" onclick="javascript:$('#dg').edatagrid('saveRow')">Save</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-undo" plain="true" onclick="javascript:$('#dg').edatagrid('cancelRow')">Cancel</a>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            $('#dg').edatagrid({
+                url: 'get_places.php',
+                saveUrl: 'save_place.php',
+                updateUrl: 'update_user.php',
+                destroyUrl: 'destroy_user.php',
+                onError: function(index, row) {
+                  alert(row.msg);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
