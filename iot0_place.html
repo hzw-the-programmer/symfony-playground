@@ -45,7 +45,10 @@
                 url: 'get_places.php',
                 saveUrl: 'save_place.php',
                 updateUrl: 'update_user.php',
-                destroyUrl: 'destroy_user.php',
+                destroyUrl: 'destroy_place.php',
+                onSuccess: function(index, row) {
+                  alert(row.msg);
+                },
                 onError: function(index, row) {
                   alert(row.msg);
                 }

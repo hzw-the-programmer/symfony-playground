@@ -37,7 +37,7 @@ try {
     if ($region || $line || $station || $channel) {
       die(json_encode(['isError' => true, 'msg' => 'Must give a Workshop name!']));
     } else {
-      die(json_encode(['isError' => false]));
+      die(json_encode(['isSuccess' => true, 'msg' => 'Success!']));
     }
   }
   $pid = $row['id'];
@@ -114,18 +114,7 @@ try {
   }
 
   echo json_encode(['isError' => false]);
-  // $results['total'] = $sth->fetch()[0];
-  //
-  // $select = 'SELECT * FROM places';
-  // if ($orderby) {
-  //   $select .= " ORDER BY $orderby";
-  // }
-  // $select .= " LIMIT $offset, $rows";
-  // $sth = $dbh->prepare($select);
-  // $sth->execute();
-  // $results['rows'] = $sth->fetchAll(PDO::FETCH_ASSOC);
-  //
-  // echo json_encode($results);
+
   $select = null;
   $insert = null;
   $dbh = null;
