@@ -5,3 +5,8 @@
 lucky_number:
   path: /lucky/number
   controller: App\Controller\LuckyController::number
+
+place:
+  path: /place/{id}
+  controller: App\Controller\PlaceController:index
+  
